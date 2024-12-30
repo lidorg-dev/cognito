@@ -1,0 +1,109 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "2020-05-20T01:26:42Z",
+    "title": "GlobomanticsProducts"
+  },
+  "host": "54tcqd60xa.execute-api.us-east-1.amazonaws.com",
+  "basePath": "/dev",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Products"
+            },
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              },
+              "responseTemplates": {
+                "application/json": "[\r\n{\r\n\"id\":1,\r\n\"name\":\"Gaming Monitor\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2014/09/24/20/36/gaming-459544_1280.jpg\",\r\n\"price\": \"400\"\r\n},\r\n{\r\n\"id\":2,\r\n\"name\":\"HeadPhones\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_1280.jpg\",\r\n\"price\": \"200\"\r\n},\r\n{\r\n\"id\":3,\r\n\"name\":\"OLED TV\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2015/02/07/20/58/tv-627876_1280.jpg\",\r\n\"price\": \"2000\"\r\n},\r\n{\r\n\"id\":4,\r\n\"name\":\"Keyboard\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2015/05/31/11/25/girl-791177_1280.jpg\",\r\n\"price\": \"100\"\r\n},\r\n{\r\n\"id\":5,\r\n\"name\":\"Wireless Charger\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2020/04/16/19/00/iphone-5051984_1280.jpg\",\r\n\"price\": \"30\"\r\n},\r\n{\r\n\"id\":6,\r\n\"name\":\"Earbuds\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2019/10/17/17/38/fone-4557410_1280.jpg\",\r\n\"price\": \"40\"\r\n},\r\n\r\n{\r\n\"id\":7,\r\n\"name\":\"External Hardrive (2TB)\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2016/02/14/19/27/external-hard-drive-1200006_1280.jpg\",\r\n\"price\": \"200\"\r\n}\r\n,\r\n{\r\n\"id\":8,\r\n\"name\":\"USB DRIVE\",\r\n\"image\": \"https://cdn.pixabay.com/photo/2012/05/07/02/02/usb-47552_1280.png\",\r\n\"price\": \"20\"\r\n}\r\n\r\n\r\n]"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      },
+      "options": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/Empty"
+            },
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
+            }
+          },
+          "requestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "passthroughBehavior": "when_no_match",
+          "type": "mock"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Empty": {
+      "type": "object",
+      "title": "Empty Schema"
+    },
+    "Products": {
+      "type": "object",
+      "title": "Products"
+    }
+  }
+}

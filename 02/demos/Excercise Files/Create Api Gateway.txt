@@ -1,0 +1,6 @@
+1. Navigate to api gateway console and create a new one
+2. Choose REST PI and use the Import Button
+3. Insert the GlobomanticsProducts-dev-swagger-apigateway contents into the text editor shown on the screen.
+4. Save the api
+5. Deploy the api
+6. Add the new api url to the productsApi.ts file in the application used through this application so it now consumes your api

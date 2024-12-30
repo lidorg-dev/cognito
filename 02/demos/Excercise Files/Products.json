@@ -1,0 +1,54 @@
+[
+{
+"id":1,
+"name":"Gaming Monitor",
+"image": "https://cdn.pixabay.com/photo/2014/09/24/20/36/gaming-459544_1280.jpg",
+"price": "400"
+},
+{
+"id":2,
+"name":"HeadPhones",
+"image": "https://cdn.pixabay.com/photo/2014/10/07/09/17/earphones-477446_1280.jpg",
+"price": "200"
+},
+{
+"id":3,
+"name":"OLED TV",
+"image": "https://cdn.pixabay.com/photo/2015/02/07/20/58/tv-627876_1280.jpg",
+"price": "2000"
+},
+{
+"id":4,
+"name":"Keyboard",
+"image": "https://cdn.pixabay.com/photo/2015/05/31/11/25/girl-791177_1280.jpg",
+"price": "100"
+},
+{
+"id":5,
+"name":"Wireless Charger",
+"image": "https://cdn.pixabay.com/photo/2020/04/16/19/00/iphone-5051984_1280.jpg",
+"price": "30"
+},
+{
+"id":6,
+"name":"Earbuds",
+"image": "https://cdn.pixabay.com/photo/2019/10/17/17/38/fone-4557410_1280.jpg",
+"price": "40"
+},
+
+{
+"id":7,
+"name":"External Hardrive (2TB)",
+"image": "https://cdn.pixabay.com/photo/2016/02/14/19/27/external-hard-drive-1200006_1280.jpg",
+"price": "200"
+}
+,
+{
+"id":8,
+"name":"USB DRIVE",
+"image": "https://cdn.pixabay.com/photo/2012/05/07/02/02/usb-47552_1280.png",
+"price": "20"
+}
+
+
+]
